@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>fotofinder</title>
+  <title>FotoFinder</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
@@ -12,7 +12,7 @@
 <body>
 <header>
   <div class="title-search">
-    <h1>Foto<img>finder</h1>
+    <h1>Foto<img src="./images/foto-finder-logo.svg" class="logo">finder</h1>
     <div id="search-bar">
       <input type="text" id="search-input" placeholder="Search">
       <p><i class="material-icons search-icon">search</i></p>
@@ -25,14 +25,27 @@
       <label for="caption">Caption</label>
         <input type="text" name="caption" id="caption-input" class="input-card">
       <button id="choose-file">Choose File</button>
-      <button id="view-favorites">View Favorites</button>
-      <button id="add-to-album">Add to Album</button>
+      <div class="bottom-buttons">
+        <button id="view-favorites">View<span class="num-cards"></span> Favorites</button>
+        <button id="add-to-album">Add to Album</button>
+      </div>
     </form>
   </div>
 </header>
-<article>
+<article class="blank-section">
+  <h2>You havent added anything yet!</h2>
+</article>
+<article data-id class="card-ui">
   <template>
+    <section class="card">
+      <h3 class="img-title"></h3>
+      <img src=${uploaded-img}>
+      <caption></caption>
+      <div>
+
+      </div>
   <!--Add card UI here-->
+    </section>
   </template>
 </article>
 </body>

@@ -25,19 +25,23 @@ button{
   background-color: #5B4447;
   color: #ffffff;
   margin-bottom: 10px;
+  border: none;
+  height: 35px;
+  font-size: 1em;
 }
 
 button:hover{
   background-color: #938284;
 }
 
-form{
-  display: flex;
-  flex-direction: column;
+h1{
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
 }
 
-.input-card{
-  margin-bottom: 10px;
+.logo{
+  width: 1.2em;
 }
 
 .title-search{
@@ -47,6 +51,7 @@ form{
   justify-content: space-between;
   margin: auto;
   max-width: 1024px;
+  padding: 10px;
 }
 
 #search-bar {
@@ -81,19 +86,59 @@ form{
   color: white;
   line-height: 35px;
 }
+/*--------Form-----------*/
+
+form{
+  display: flex;
+  flex-direction: column;  
+  padding:30px;
+}
+
+input{
+  height: 35px;
+}
+
+
+.input-card{
+  margin-bottom: 10px;
+}
 
 .input-wrapper{
   margin: auto;
   min-width: 280px;
   max-width: 600px;
+}
 
+.bottom-buttons{
+  flex-direction: row;
+  display: flex;
+  justify-content: space-around;
+  min-width: 280px;
+  max-width: 600px;
+  border-spacing: 10px;
+}
+
+#view-favorites,
+#add-to-album{
+  width: 45%;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 2;
 }
 
 /*---------- Aritcle ---------------*/
 article{
-  background-color: #3E2A35;
+  background-color: #c2b2b4;
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
 }
-
+h2{
+padding: 50px;
+margin: auto;
+max-width: 80%;
+}
 .container{
   border: 1px dashed;
   display: grid;
