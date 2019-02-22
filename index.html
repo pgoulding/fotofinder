@@ -5,6 +5,7 @@
   <title>fotofinder</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
@@ -15,13 +16,14 @@
     <div id="search-bar">
       <input type="text" id="search-input" placeholder="Search">
       <p><i class="material-icons search-icon">search</i></p>
+    </div>
   </div>
   <div class="input-wrapper">
     <form>
       <label for="title">Title</label>
-        <input type="text" name="title-input" id="title-input" maxlength=25>
+        <input type="text" name="title-input" id="title-input" class="input-card"maxlength=25>
       <label for="caption">Caption</label>
-        <input type="text" name="caption" id="caption-input">
+        <input type="text" name="caption" id="caption-input" class="input-card">
       <button id="choose-file">Choose File</button>
       <button id="view-favorites">View Favorites</button>
       <button id="add-to-album">Add to Album</button>
@@ -34,6 +36,6 @@
   </template>
 </article>
 </body>
-<script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="photo.js"></script>
+<script type="text/javascript" src="main.js"></script>
 </html>
