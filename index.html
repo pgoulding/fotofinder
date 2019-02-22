@@ -36,17 +36,18 @@
   <h2>You havent added anything yet!</h2>
 </article>
 <article data-id class="card-ui">
-  <template>
+<!--   <template> -->
     <section class="card">
       <h3 class="img-title"></h3>
-      <img src=${uploaded-img}>
+<!--       <img src=${uploaded-img}> -->
       <caption></caption>
-      <div>
-
+      <div class="update-card">
+        <img src="images/delete.svg" id="delete-card" onmouseover="this.src='./images/delete-active.svg'" onmouseout="this.src='./images/delete.svg'" class="logo">
+        <img src="./images/favorite.svg" id="heart-card" onmouseover="this.src='./images/favorite-active.svg'" onmouseout="this.src='./images/favorite.svg'" class="logo">
       </div>
   <!--Add card UI here-->
     </section>
-  </template>
+<!--   </template> -->
 </article>
 </body>
 <script type="text/javascript" src="photo.js"></script>
