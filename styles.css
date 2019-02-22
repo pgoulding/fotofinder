@@ -1,37 +1,83 @@
 /*---------- Body ------------------*/
-*{
-  border-top: 1px solid red
+*,
+*:before,
+*:after{
+  border: 1px solid red;
   box-sizing: border-box;
 }
 
-body{
-
+body,
+html{
+  font-family: 'Open Sans', sans-serif;
+  height: auto;
+  min-width: 320px
+  width:100vw;
 }
 
 /*---------- Header ----------------*/
 header{
+  background-color: #3E2A35;
+  color: #C2B2B4;
+}
 
+button{
+  background-color: #5B4447;
+  color: #ffffff;
+}
+
+button:hover{
+  background-color: #938284;
+}
+
+.title-search{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1024px;
+}
+
+#search-bar {
+  align-items: center;
+  background-color: lightgrey;
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  height: 35px;
+  justify-content: space-between;
+  width: 400px;
+}
+
+#search-bar p {
+  display: inline;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  width: 10%;
+}
+
+.search-icon {
+  color: white;
+  line-height: 35px;
+}
+
+.input-wrapper{
+  margin: auto;
+  min-width: 300px;
+  max-width: 800px;
 }
 
 /*---------- Aritcle ---------------*/
 article{
-
+  background-color: #3E2A35;
 }
 
 .container{
   border: 1px dashed;
   display: grid;
   grid-template-columns: 33% 33% 33%;
-}
-
-/*---------- Aside -----------------*/
-aside{
-
-}
-
-/*---------- Footer ----------------*/
-footer{
-
 }
 
 /*---------- Media Queries ---------*/
