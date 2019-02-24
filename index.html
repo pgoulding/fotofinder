@@ -32,11 +32,22 @@
     </form>
   </div>
 </header>
-<article class="blank-section">
-  <h2>You havent added anything yet!</h2>
-</article>
-<article data-id class="card-ui">
+<div class="article-wrapper">
+<!--   <article class="blank-section">
+    <h2>You havent added anything yet!</h2>
+  </article> -->
+  <article data-id class="card-ui">
 <!--   <template> -->
+    <section class="card">
+      <h3 class="img-title">This is a Title</h3>
+      <img class="card-image" src="./images/dog1-sq.jpg">
+      <caption id="img-caption">This is a Caption to the photo</caption>
+      <div class="update-card">
+        <img src="images/delete.svg" id="delete-card" onmouseover="this.src='./images/delete-active.svg'" onmouseout="this.src='./images/delete.svg'" class="logo">
+        <img src="./images/favorite.svg" id="heart-card" onmouseover="this.src='./images/favorite-active.svg'" onmouseout="this.src='./images/favorite.svg'" class="logo">
+      </div>
+    </section>
+<!--   </template> -->
     <section class="card">
       <h3 class="img-title">This is a Title</h3>
       <img class="card-image" src="./images/dog1-sq.jpg">
@@ -45,10 +56,36 @@
         <img src="images/delete.svg" id="delete-card" onmouseover="this.src='./images/delete-active.svg'" onmouseout="this.src='./images/delete.svg'" class="logo">
         <img src="./images/favorite.svg" id="heart-card" onmouseover="this.src='./images/favorite-active.svg'" onmouseout="this.src='./images/favorite.svg'" class="logo">
       </div>
-  <!--Add card UI here-->
     </section>
-<!--   </template> -->
-</article>
+        <section class="card">
+      <h3 class="img-title">This is a Title</h3>
+      <img class="card-image" src="./images/dog1-sq.jpg">
+      <caption>This is a Caption to the photo</caption>
+      <div class="update-card">
+        <img src="images/delete.svg" id="delete-card" onmouseover="this.src='./images/delete-active.svg'" onmouseout="this.src='./images/delete.svg'" class="logo">
+        <img src="./images/favorite.svg" id="heart-card" onmouseover="this.src='./images/favorite-active.svg'" onmouseout="this.src='./images/favorite.svg'" class="logo">
+      </div>
+    </section>
+        <section class="card">
+      <h3 class="img-title">This is a Title</h3>
+      <img class="card-image" src="./images/dog1-sq.jpg">
+      <caption>This is a Caption to the photo</caption>
+      <div class="update-card">
+        <img src="images/delete.svg" id="delete-card" onmouseover="this.src='./images/delete-active.svg'" onmouseout="this.src='./images/delete.svg'" class="logo">
+        <img src="./images/favorite.svg" id="heart-card" onmouseover="this.src='./images/favorite-active.svg'" onmouseout="this.src='./images/favorite.svg'" class="logo">
+      </div>
+    </section>
+        <section class="card">
+      <h3 class="img-title">This is a Title</h3>
+      <img class="card-image" src="./images/dog1-sq.jpg">
+      <caption>This is a Caption to the photo</caption>
+      <div class="update-card">
+        <img src="images/delete.svg" id="delete-card" onmouseover="this.src='./images/delete-active.svg'" onmouseout="this.src='./images/delete.svg'" class="logo">
+        <img src="./images/favorite.svg" id="heart-card" onmouseover="this.src='./images/favorite-active.svg'" onmouseout="this.src='./images/favorite.svg'" class="logo">
+      </div>
+    </section>
+  </article>
+</div>
 </body>
 <script type="text/javascript" src="photo.js"></script>
 <script type="text/javascript" src="main.js"></script>
