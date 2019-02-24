@@ -5,38 +5,25 @@ class Photo{
     this.file = file;
     this.caption = caption;
     this.favorited = false;
-  }
+  }   
 
   saveToStorage(photos){
     photos.push(this)
   }
 
-  updateTitle(){
-
+  updateTitle(text){
+    this.title = text;
   }
 
-  updateCaption(){
-
+  updateCaption(text){
+    this.caption = text;
   }
 
   updateFavorite(){
-
-  }
-
-  isLoved(){
-    if (this.favorited < 1){
-      this.favorited++;
+    // if (this.favorited ==== !true){
+    // this.favorited = !false;
     }
   }
 
-  notLoved(){
-    if(this.favorited > 0){
-      this.favorited--;
-    }
-  }
 
-  deletePhoto(){
 
-  }
-
-}
