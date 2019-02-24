@@ -13,6 +13,7 @@ html{
   min-width: 320px
   width:100vw;
   margin: 0;
+  height: 100vw;
 }
 
 /*---------- Header ----------------*/
@@ -50,7 +51,7 @@ h1{
   flex-direction: row;
   justify-content: space-between;
   margin: auto;
-  max-width: 1024px;
+  max-width: 1200px;
   padding: 10px;
 }
 
@@ -118,7 +119,7 @@ input{
   flex-direction: row;
   display: flex;
   justify-content: space-between;
-  min-width: 280px;
+  min-width: 260px;
   max-width: 600px;
   border-spacing: 10px;
 }
@@ -132,11 +133,10 @@ input{
 article{
   background-color: #c2b2b4;
   color: #ffffff;
-  text-align: center;
-  justify-content: center;
-  height: 100vh;
-  display: flex;
-  justify-content: 
+  justify-content: flex-start;
+  display: flex; 
+  max-width: 1200px;
+  flex-wrap: wrap;
 }
 
 h2{
@@ -152,12 +152,6 @@ h3{
   margin: 0;
 }
 
-.container{
-  border: 1px dashed;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-}
-
 .card{
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
   position: relative;
@@ -165,8 +159,10 @@ h3{
   height: 300px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background-color: white;
   color: black;
+  margin: 30px;
 }
 
 .card-image{
@@ -191,30 +187,44 @@ h3{
   height: 2em;
   padding: 5px;
 }
-/*#delete-card{
-  padding-left: 5px;
+
+.article-wrapper{
+  background-color: #c2b2b4;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100%;
 }
-#heart-card{
-  padding-right: 5px;
-}*/
+.card-ui{
+  align-items: flex-start;
+}
 /*---------- Media Queries ---------*/
 
-/*---- Large Tablet/Small Comp -----*/
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 700px){
+
+h1{
+  padding-bottom: 20px;
+}
+
+button{
+  height: 40px;
+}
+
+.title-search{
+  flex-direction: column;
+  margin: auto;
+  min-width: 280px;
+  max-width: 600px;
+  padding: 10px 30px 30px 30px;
+}
+
+#search-bar{
+  width: 100%;
+}
+article{
+  justify-content: space-around;
+}
 
 }
 
-/*---- Typical Tablet Size ---------*/
-@media screen and (max-width: 768px){
-
-}
-
-/*---- Large Phones ----------------*/
-@media screen and (max-width: 440px){
-
-}
-
-/*---- Small Screens ---------------*/
-@media screen and (max-width: 320px){
-
-}
