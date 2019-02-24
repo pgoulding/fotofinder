@@ -24,7 +24,7 @@ header{
 button{
   background-color: #5B4447;
   color: #ffffff;
-  margin-bottom: 10px;
+  margin-top: 20px;
   border: none;
   height: 35px;
   font-size: 1em;
@@ -98,6 +98,11 @@ input{
   height: 35px;
 }
 
+#title-input,
+#caption-input{
+  font-size: 1.5em;
+  margin: 10px 0 20px 0;
+}
 
 .input-card{
   margin-bottom: 10px;
@@ -112,7 +117,7 @@ input{
 .bottom-buttons{
   flex-direction: row;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   min-width: 280px;
   max-width: 600px;
   border-spacing: 10px;
@@ -120,10 +125,7 @@ input{
 
 #view-favorites,
 #add-to-album{
-  width: 45%;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-grow: 2;
+  width: 46%;
 }
 
 /*---------- Aritcle ---------------*/
@@ -133,18 +135,68 @@ article{
   text-align: center;
   justify-content: center;
   height: 100vh;
+  display: flex;
+  justify-content: 
 }
+
 h2{
 padding: 50px;
 margin: auto;
 max-width: 80%;
 }
+
+h3{
+  background-color: white;
+  color: black;
+  padding: 2px 0 0 2px;
+  margin: 0;
+}
+
 .container{
   border: 1px dashed;
   display: grid;
   grid-template-columns: 33% 33% 33%;
 }
 
+.card{
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.5);
+  position: relative;
+  width: 240px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+
+.card-image{
+  height: 120px;
+  width: 240px;
+}
+
+.card:hover{
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.7);
+}
+
+.caption{
+  background-color: white;
+  color: black;
+  height:80px;
+}
+
+.update-card{
+  background-color: #5B4447;
+  display: flex;
+  justify-content: space-between;
+  height: 2em;
+  padding: 5px;
+}
+/*#delete-card{
+  padding-left: 5px;
+}
+#heart-card{
+  padding-right: 5px;
+}*/
 /*---------- Media Queries ---------*/
 
 /*---- Large Tablet/Small Comp -----*/
